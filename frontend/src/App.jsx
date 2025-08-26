@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
           {" "}
         </Route>
       </Routes>
+      <Footer />
     </>
   );
 }
