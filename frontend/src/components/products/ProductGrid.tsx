@@ -12,7 +12,7 @@ type Props = {
 
 const ProductGrid: React.FC<Props> = ({ products }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {products.map((product) => {
         return (
           <Link
@@ -20,7 +20,7 @@ const ProductGrid: React.FC<Props> = ({ products }) => {
             className="block"
             key={product._id}
           >
-            <div className="bg-white p-4 rounded-lg">
+            <div className="bg-white  rounded-lg">
               <div className="w-full h-96 mb-4">
                 <img
                   src={product.image[0].url}
