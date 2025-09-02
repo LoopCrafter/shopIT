@@ -5,6 +5,8 @@ import NewArrivals from "../components/products/NewArrivals";
 import ProductDetails from "../components/products/ProductDetails";
 import ProductGrid from "../components/products/ProductGrid";
 import { similarProducts } from "../data";
+import { FeaturedCollection } from "../components/products/FeaturedCollection";
+import FeaturesSection from "../components/products/FeaturesSection";
 
 const HomePage = () => {
   return (
@@ -20,6 +22,8 @@ const HomePage = () => {
         </h2>
         <ProductGrid products={[...similarProducts, ...similarProducts]} />
       </div>
+      <FeaturedCollection />
+      <FeaturesSection />
     </div>
   );
 };
